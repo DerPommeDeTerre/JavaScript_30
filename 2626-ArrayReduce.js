@@ -42,10 +42,10 @@ fn3 = function sum3(acucum, curr){
 
 
 var reduce = function(nums1, fn1, init1){
-    let result = init1;
+    let result = init1; //This is going to be the accumulator
 
     nums1.forEach(function(element){
-        result = fn1(result, element)
+        result = fn1(result, element) //ELEMENT is the current position in the array
         console.log(result);
     })
 
